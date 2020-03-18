@@ -1,0 +1,432 @@
+body { 
+	margin: 0 auto;
+}	
+
+.navBar {
+	width: 100%;
+	height: 8vh;
+	background-color: #424242;
+	font-family: 'Montserrat', sans-serif;
+	overflow: hidden;
+	z-index: 1;
+	position: fixed;
+	padding: 10px 0px;
+	transition: 0.5s;
+}
+
+.navBar img {
+	margin: auto;
+    width: 10%;
+    float: left;
+    position: relative;
+    top: 10px;
+    left: 2%;
+	transition: 0.5s;
+}
+
+.navBar h2{
+	
+    color: white;
+    position: relative;
+    left: 60%;
+    width: 10%;
+    float: left;
+    margin: auto;
+    text-align: center;
+	transition: 0.3s ease-in-out;
+	top: 30px;
+}
+
+.buffer {
+	height: 100px;
+    width: 100%;
+    background-color: #424242;
+}
+
+.hover {
+	display: inline-block;
+	position: relative;
+}
+
+.hover::before {
+	content: '';
+	position: absolute;
+	width: 60%;
+	transform: scaleX(0);
+	height: 3px;
+	bottom: 0;
+	left: 25px;
+	background-color: white; 
+	transform-origin: bottom left;
+	transition: 0.5s ease-out;
+	
+}
+
+.hover:hover::before {
+	transform: scaleX(1);
+	transform-origin: bottom right;
+	background-color: white;
+}
+
+.heroImage {
+	width: 55%;
+	height: 101%;
+	background-image: url("heroImage.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	z-index: 1;
+	float: left;
+	clear: both;
+	margin: 3px;
+	margin-left: 0px;
+
+}
+
+.heroImage p {
+	position: relative;
+    top: 190px;
+	left: 10%;
+    width: 40%;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: auto;
+	float: left;
+	clear: both;
+}
+
+.bookButton {
+
+    width: 15%;
+    height: 80px;
+    background-color: #EF5350;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    top: 350px;
+    left: 5%;
+    margin: 0 auto;
+}
+
+.bookButton h1 {
+	font-size: 28px;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    top: 3px;
+}
+
+
+
+.whoWeAre {
+	width: 100%;
+	height: 350px;
+	background-color: #9575CD;
+	float: left;
+	clear: both;
+	
+}
+
+.whoWeAre h1 {
+	margin: auto;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	text-align: center;
+	top: 20px;
+}
+
+.whoWeAre p {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	color: white;
+	text-align: center;
+	position: relative;
+	top: 20px;
+	width: 50%;
+	margin: 0 auto;
+}
+	
+.heroContainer {
+	width: 100%;
+	height: 800px;
+}
+	
+
+.signUp {
+	clear: right;
+	width: 44.6%;
+	background-image: url('signUp.jpg');
+	background-size: cover;
+	height: 50%;
+	float: left;
+	margin: 3px;
+	margin-right: 0px;
+}
+
+.signUp h2 {
+	margin: auto;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	text-align: center;
+	top: 20px;
+}
+
+.signUp p {
+	margin: auto;
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	position: relative;
+	top: 20px;
+	left: 5px;
+	width: 80%;	
+}
+
+.gallery {
+	width: 44.6%;
+	float: left;
+	display: inline;
+	height: 50%;
+	margin: 3px;
+	margin-right: 0px;
+	overflow: hidden;
+	background-image: url('tat2.jpg');
+	background-size: cover;	
+
+}
+
+.gallery h2 {
+	margin: auto;
+	color: white;
+	font-family: 'Montserrat', san-serif;
+	position: relative;
+	text-align: center;
+	top: 120px;
+	font-size: 22px;
+}
+
+.bioContainer {
+	height: 350px;
+	width: 100%;
+	overflow: hidden;
+}
+
+.bioOne {
+	width: 49.8%;
+	height: 100%;
+	margin-right: 3px;
+	margin-left: 0px;
+	background-color: white;
+	float: left;
+	
+}
+
+.bio1P {
+	width: 50%;
+	height: 100%;
+	float: left;
+}
+
+.bio1P > p {
+	font-family: 'Montserrat', san-serif;
+	width: 80%;
+	color: #424242;
+	margin: 0 auto;
+	text-align: justify;
+	position: relative;
+    top: 70px;
+}
+
+.bio1P > h3 {
+	font-family: 'Montserrat';
+	color: #424242;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+	
+
+.bio1I {
+	width: 50%;
+	height: 100%;
+	background-image: url('cat.jpg');
+	float: left;
+	display: inline;
+	background-size: cover;
+}
+
+	
+
+.bioTwo {
+	width: 49.8%;
+	height: 100%;
+	margin-left: 3px;
+	margin-right: 0px;
+	background-color: white;
+	float: left;
+	display: inline;
+}
+
+.bio2P {
+	width: 50%;
+	height: 100%;
+	float: right;
+}
+
+.bio2P > p {
+	
+	font-family: 'Montserrat', san-serif;
+	width: 80%;
+	color: #424242;
+	margin: 0 auto;
+	text-align: justify;
+	position: relative;
+	top: 70px;
+}
+
+.bio2P > h3 {
+	font-family: 'Montserrat';
+	color: #424242;
+	margin: 0 auto;
+	text-align: center;
+	position: relative;
+	top: 40px;
+}
+
+.bio2I {
+	width: 50%;
+	height: 100%;
+	background-image: url('dog.jpg');
+	float: left;
+	display: inline;
+	background-size: cover;
+}
+
+.findUs {
+	height: 350px;
+	width: 100%;
+	float: left;
+	background-color: white;
+}
+
+
+	
+
+
+.map {
+	height: 100%;
+	float: right;
+	
+}
+
+	
+
+.footer {
+	height: 150px;
+	width: 100%;
+	background-color: #424242;
+	clear: both;
+}
+
+.footer p {
+	color: white;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	position: relative;
+	top: 50px;
+	text-align: center;
+	margin: 0 auto;
+	
+}
+
+.insta {
+	color: white;
+	float: right;
+	position: relative;
+	right: 50px;
+	font-size: 30px;
+}
+
+.facebook {
+	color: white;
+	float: right;
+	position: relative;
+	right: 70px;
+	font-size: 30px;
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .navBar, .heroImage, .whoWeAre, .signUp, .gallery, .footer { 
+		float: left;
+		width: 100%;
+		}
+		
+	.map {
+		max-width: 100%;
+		overflow: hidden;
+	}
+		
+		
+	.navBar h2 {
+		display: none;
+	}
+	
+	.navBar img {
+		width: 25%;
+	}
+	
+	.buffer {
+		height: 80px;
+	}
+	
+	.heroImage {
+		height: 300px;
+	}
+	
+	.heroImage p {
+		display: none;
+	}
+	
+	.bookButton {
+	width: 60%;
+    position: relative;
+    top: 100px;
+    right: 40px;
+    text-align: center;
+    margin: 0 auto;
+	}
+	
+	.bookButton h1 {
+		position: relative;
+		top: 20px;
+	}
+	
+	.bioContainer {
+		display: none;
+	}
+	
+	.insta {
+		position: relative;
+		right: 200px;
+		top: 70px;
+	}
+	
+	.facebook {
+		
+		position: relative;
+		right: 220px;
+		top: 70px;
+	}
+	
+}
+		
+		
+
+	
